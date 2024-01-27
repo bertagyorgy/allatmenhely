@@ -48,7 +48,7 @@ def main():
                               viselkedes TEXT,
                               egyeb_jellemzok TEXT)''')
 
-                c.execute("INSERT INTO allatok (firstname, lastname, csipszam, ivar, fajta, egeszsegi_allapot, fogazat, kor, viselkedes, egyeb_jellemzok) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                c.execute("INSERT INTO allatok (nev, chipszam, ivar, fajta, egeszsegi_allapot, fogazat, kor, viselkedes, egyeb_jellemzok) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
                           (nev, chipszam, ivar, fajta, egeszsegi_allapot, fogazat, kor, viselkedes, egyeb_jellemzok))
 
                 conn.commit()
