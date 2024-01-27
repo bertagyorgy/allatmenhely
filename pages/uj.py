@@ -38,7 +38,7 @@ def main():
 
                 c.execute('''CREATE TABLE IF NOT EXISTS allatok 
                              (id INTEGER PRIMARY KEY AUTOINCREMENT,
-                              name TEXT,
+                              nev TEXT,
                               chipszam TEXT,
                               ivar TEXT,
                               fajta TEXT,
